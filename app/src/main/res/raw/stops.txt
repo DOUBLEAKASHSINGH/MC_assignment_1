@@ -1,0 +1,5 @@
+New York,No need,0
+London,No Visa Required,5567
+Paris,Visa Required,350
+Tokyo,Visa Required,1000
+Sydney,Visa Required,7500

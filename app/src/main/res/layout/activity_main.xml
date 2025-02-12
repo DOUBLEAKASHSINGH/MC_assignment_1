@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- TextView to Display Current Stop -->
+    <TextView
+        android:id="@+id/tv_current_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Stop: Not Started"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- RecyclerView for Lazy List of Stops -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_stops"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <!-- Button to Mark Next Stop as Reached -->
+    <Button
+        android:id="@+id/btn_next_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Stop Reached" />
+
+    <!-- Distance Display and Unit Switch -->
+    <TextView
+        android:id="@+id/tv_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distance Left: 0 km"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_distance_covered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distance Covered: 0 km"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/btn_switch_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Switch to Miles" />
+
+    <!-- Progress Bar for Journey Progress -->
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="0"
+        android:max="100" />
+    
+</LinearLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Assignment-1</string>
+    <string name="visa_requirement_none">Visa Requirement: None</string>
+    <string name="stop_name">Stop Name</string>
+    <string name="assignment_1">level\n</string>
+</resources>
